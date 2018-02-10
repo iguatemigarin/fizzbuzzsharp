@@ -1,17 +1,10 @@
 clean:
-	rm -rf bin publish
+	rm -rf bin
 
 build: clean
 	fsharpc FizzBuzz.fs Main.fs \
 		--nologo \
 		--out:./bin/fizzbuzzsharp \
-		--target:exe \
-		--nocopyfsharpcore
-
-publish: clean
-	fsharpc FizzBuzz.fs Main.fs \
-		--nologo \
-		--out:./publish/fizzbuzzsharp \
 		--target:exe \
 		--nocopyfsharpcore \
 		--standalone

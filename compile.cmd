@@ -1,0 +1,1 @@
+fsc FizzBuzz.fs Main.fs --nologo --out:./bin/fizzbuzzsharp.exe --target:exe --nocopyfsharpcore --standalone
